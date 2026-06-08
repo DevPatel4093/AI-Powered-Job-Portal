@@ -12,12 +12,13 @@ function Jobs() {
   useEffect(() => {
 
     API.get("/jobs")
-      .then((res) => {
-        setJobs(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  .then((res) => {
+    console.log(res.data);
+    setJobs(res.data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
   }, []);
 
@@ -41,6 +42,8 @@ function Jobs() {
     }
   };
 
+console.log("ENV =", import.meta.env);
+console.log("API =", import.meta.env.VITE_API_URL);
   return (
 
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-blue-950">
@@ -79,7 +82,8 @@ function Jobs() {
         </label>
 
         </div>
-        {jobs
+        {Array.isArray(jobs) && 
+        jobs
             .filter((job) => {
 
                 const searchText = search.toLowerCase();
