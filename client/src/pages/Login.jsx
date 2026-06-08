@@ -30,7 +30,11 @@ function Login() {
 
       alert("Login Successful");
 
-      window.location.href = "/";
+      if (res.data.user.role === "recruiter") {
+          window.location.href = "/recruiter-dashboard";
+        } else {
+          window.location.href = "/candidate";
+}
 
     } catch (error) {
 

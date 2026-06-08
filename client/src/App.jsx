@@ -25,6 +25,7 @@ import Applicants from "./pages/Applicants";
 
 import ProtectedRoute from "./component/ProtectedRoute";
 
+import Home from "./pages/Home";
 
 function App() {
 
@@ -35,8 +36,13 @@ function App() {
    <Routes>
 
     <Route
-     path="/"
-     element={<Jobs />}
+    path="/"
+    element={<Home />}
+    />
+
+    <Route
+    path="/jobs"
+    element={<Jobs />}
     />
 
     <Route
