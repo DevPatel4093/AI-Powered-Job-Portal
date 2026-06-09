@@ -19,9 +19,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://ai-powered-job-portal-pi.vercel.app"
+      "https://ai-powered-job-portal-pi.vercel.app",
+      "https://ai-powered-job-portal-9v2f2i591-devp3032-6944s-projects.vercel.app"
     ],
-    credentials: true
+    credentials: true,
   })
 );
 
