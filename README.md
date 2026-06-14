@@ -96,16 +96,6 @@ AI-Powered-Job-Portal/
 
 ## Installation
 
-### Clone Repository
-
-```bash
-git clone https://github.com/your-username/AI-Powered-Job-Portal.git
-
-cd AI-Powered-Job-Portal
-```
-
----
-
 ## Backend Setup
 
 Navigate to server folder:
